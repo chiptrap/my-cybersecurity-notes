@@ -1,6 +1,6 @@
 # Cybersecurity Notes Repository
 
-**Author:** Your Name  
+**Author:** Bricen Chitty  
 **Purpose:** To document my ongoing learning process in cybersecurity, starting from foundational topics like Linux and networking, and progressing into more advanced areas such as defensive security, offensive techniques, and cloud security. This repository serves as my personal knowledge base and portfolio of growth as I develop my cybersecurity skill set.
 
 ---

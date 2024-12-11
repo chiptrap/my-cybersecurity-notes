@@ -28,6 +28,13 @@ Today I explored basic Linux navigation, focusing on understanding the directory
 ## Key Commands
 - **`ls -l`**: Lists directory contents in long format, showing permissions, ownership, and file size.  
   *Initial Note:* Running `ls -l /etc` helped me understand which files in the configuration directory are accessible or restricted, reinforcing my knowledge of file permissions.
+- **`hostname`**: Print the name of the computer that we are logged into
+- **`whoami`**: Used on Windows  and Linux systems to get our current user name
+  *Initial Note:* During a secuirty assessment we obtain reverse shell access on a host, and one of the first bits of situational awareness we should do is figuring out what user we are running as. From there, we can figure out if the user has any special privileges/access.
+- **`Id`**: Expands on whoami. Print out our effective group memeberships and IDs.
+  *Initial Note:* `adm` group means that the user can read log files in /var/log and could potentially gain access to sensitive information, membership in the `sudo` group is of particular interest as this means our user can run some or all commands as the all-powerful `root` user. 
+- **`SSH [username]@[IP address]`**: Allows ssh connection to requested IP. 
+
 
 ---
 
@@ -47,6 +54,7 @@ Today I explored basic Linux navigation, focusing on understanding the directory
 - **`grep "error" /var/log/syslog`**: Quickly locates lines containing the word “error” in the system logs.  
   *Initial Note:* Using `grep` helped me identify recent authentication failures, providing insights into potential unauthorized access attempts.
 
+--**`Secure Shell (SSH)`**: Protocol that allows clients to access and execute commands or actions on remote computers. SSH is one of the permanently installed standard tools and is the preferred choice for many administrators to configure and maintain a computer through remote access.
 ---
 
 ## Networking Basics in Linux

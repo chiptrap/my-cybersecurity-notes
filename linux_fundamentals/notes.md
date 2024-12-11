@@ -41,8 +41,8 @@ Today I explored basic Linux navigation, focusing on understanding the directory
 ## File System Structure
 - **Root-Level Directories:**  
   For instance, `/etc` holds configuration files, `/var/log` contains logs, and `/home` hosts user directories. Understanding each directory’s purpose helps me know where to find critical files.
-  *Note:* In a typical Linux environment, the local mail for a specific user is commonly stored in the user's mail spool file under the /var/mail/ directory.
-  *Note:* A user's default shell is defined in the /etc/passwd file, listed as the last field in that user's entry.
+- *Note:* In a typical Linux environment, the local mail for a specific user is commonly stored in the user's mail spool file under the /var/mail/ directory.
+- *Note:* A user's default shell is defined in the /etc/passwd file, listed as the last field in that user's entry.
   -It is commonly set to the Bourne Again Shell (bash) unless otherwise changed.
 ---
 

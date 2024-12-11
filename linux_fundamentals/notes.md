@@ -34,14 +34,16 @@ Today I explored basic Linux navigation, focusing on understanding the directory
 - **`Id`**: Expands on whoami. Print out our effective group memeberships and IDs.
   *Initial Note:* `adm` group means that the user can read log files in /var/log and could potentially gain access to sensitive information, membership in the `sudo` group is of particular interest as this means our user can run some or all commands as the all-powerful `root` user. 
 - **`SSH [username]@[IP address]`**: Allows ssh connection to requested IP. 
-
+- **`uname`**: Prints basic information about the operating system name and system hardware
 
 ---
 
 ## File System Structure
 - **Root-Level Directories:**  
   For instance, `/etc` holds configuration files, `/var/log` contains logs, and `/home` hosts user directories. Understanding each directory’s purpose helps me know where to find critical files.
-
+  *Note:* In a typical Linux environment, the local mail for a specific user is commonly stored in the user's mail spool file under the /var/mail/ directory.
+  *Note:* A user's default shell is defined in the /etc/passwd file, listed as the last field in that user's entry.
+  -It is commonly set to the Bourne Again Shell (bash) unless otherwise changed.
 ---
 
 ## Permissions & Ownership
